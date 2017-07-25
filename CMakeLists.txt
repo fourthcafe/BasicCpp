@@ -25,6 +25,12 @@ set(CMAKE_CXX_STANDARD 11)
 
 
 #set(SOURCE_FILES Ch01/01-4/InlineFunc.cpp)
-set(SOURCE_FILES Ch01/01-4/Template.cpp)
+#set(SOURCE_FILES Ch01/01-4/Template.cpp)
+
+
+#set(SOURCE_FILES Ch01/01-5/NameSp1.cpp)
+#set(SOURCE_FILES Ch01/01-5/NameSp2.cpp)
+set(SOURCE_FILES Ch01/01-5/NameSp3.cpp)
+
 
 add_executable(Ch01 ${SOURCE_FILES})
