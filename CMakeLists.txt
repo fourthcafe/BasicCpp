@@ -30,7 +30,7 @@ set(CMAKE_CXX_STANDARD 11)
 
 #set(SOURCE_FILES Ch01/01-5/NameSp1.cpp)
 #set(SOURCE_FILES Ch01/01-5/NameSp2.cpp)
-set(SOURCE_FILES Ch01/01-5/NameSp3.cpp)
-
+#set(SOURCE_FILES Ch01/01-5/NameSp3.cpp)
+set(SOURCE_FILES Ch01/01-5/NamespaceOverlap.cpp)
 
 add_executable(Ch01 ${SOURCE_FILES})
