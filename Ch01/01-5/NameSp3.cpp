@@ -2,6 +2,8 @@
 // Created by fourthcafe on 2017-07-26.
 //
 
+// 네임스페이스 영역 안에서 같은 네임스페이스 영역의 함수는 '그냥' 호출할 수 있다.
+
 #include <iostream>
 
 namespace BestComImpl {
@@ -22,7 +24,7 @@ int main(void) {
 
 void BestComImpl::SimpleFunc() {
 	std::cout << "Function make by BestCom" << std::endl;
-	PrettyFunc();
+	PrettyFunc();    // BestComImpl::PrettyFunc()
 	ProgComImpl::SimpleFunc();
 }
 
