@@ -31,7 +31,13 @@ set(CMAKE_CXX_STANDARD 11)
 #set(SOURCE_FILES Ch01/01-5/NameSp1.cpp)
 #set(SOURCE_FILES Ch01/01-5/NameSp2.cpp)
 #set(SOURCE_FILES Ch01/01-5/NameSp3.cpp)
-#set(source_files Ch01/01-5/NamespaceOverlap.cpp)
-set(SOURCE_FILES Ch01/01-5/Question01-4.h Ch01/01-5/Question01-4-declare.cpp Ch01/01-5/Question01-4.cpp)
+#set(SOURCE_FILES Ch01/01-5/NamespaceOverlap.cpp)
+#set(SOURCE_FILES Ch01/01-5/Question01-4.h Ch01/01-5/Question01-4-declare.cpp Ch01/01-5/Question01-4.cpp)
+
+#set(SOURCE_FILES Ch01/170730Exercise/Triangle.cpp)
+#set(SOURCE_FILES Ch01/170730Exercise/HalfPyramid.cpp)
+#set(SOURCE_FILES Ch01/170730Exercise/Pyramid.cpp)
+set(SOURCE_FILES Ch01/170730Exercise/Diamond.cpp)
+
 
 add_executable(Ch01 ${SOURCE_FILES})
