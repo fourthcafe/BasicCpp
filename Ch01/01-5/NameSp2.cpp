@@ -7,7 +7,7 @@
 // 네임스페이스에서 함수의 선언과 정의를 분리
 
 namespace BestComImpl {
-	void Simplefunc(void);
+	void SimpleFunc(void);
 }
 
 namespace ProgComImpl {
@@ -15,13 +15,13 @@ namespace ProgComImpl {
 }
 
 int main(void) {
-	BestComImpl::Simplefunc();
+	BestComImpl::SimpleFunc();
 	ProgComImpl::SimpleFunc();
 
 	return 0;
 }
 
-void BestComImpl::Simplefunc() {
+void BestComImpl::SimpleFunc() {
 	std::cout << "Function make by BestCom" << std::endl;
 }
 
