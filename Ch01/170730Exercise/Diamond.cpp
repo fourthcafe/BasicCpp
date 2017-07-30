@@ -5,7 +5,7 @@
 #include <iostream>
 
 
-// maxWidth :: 가로 행의 길이
+// spaceCnt :: 좌측 여백 갯수
 // writeCnt :: 찍을 *의 갯수
 void writeRow(int spaceCnt, int writeCnt) {
 	for (int j = 1; j <= spaceCnt; j++) {
