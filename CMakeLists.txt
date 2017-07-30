@@ -36,7 +36,8 @@ set(CMAKE_CXX_STANDARD 11)
 
 #set(SOURCE_FILES Ch01/170730Exercise/Triangle.cpp)
 #set(SOURCE_FILES Ch01/170730Exercise/HalfPyramid.cpp)
-set(SOURCE_FILES Ch01/170730Exercise/Pyramid.cpp)
+#set(SOURCE_FILES Ch01/170730Exercise/Pyramid.cpp)
+set(SOURCE_FILES Ch01/170730Exercise/Diamond.cpp)
 
 
 add_executable(Ch01 ${SOURCE_FILES})
