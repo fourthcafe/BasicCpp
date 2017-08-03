@@ -5,8 +5,15 @@
 namespace Bank {
 	void runBankProgram();
 
-	void showInfo();
+	void showMenu();
 
 	int userInput();
 
+	void makeAccount();
+
+	void deposit();
+
+	void withdraw();
+
+	void showAllAccInfo();
 }

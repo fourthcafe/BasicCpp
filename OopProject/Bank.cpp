@@ -5,12 +5,38 @@
 #include <iostream>
 #include "Bank.h"
 
+typedef struct {
+	int addId;
+	int balance;
+	char customerName[20];
+} Account;
+
+Account accArr[10];
+const int accIdx = 0;
+
+
 void Bank::runBankProgram() {
 
 	while (true) {
-		showInfo();
+		showMenu();
 		int inputNum = userInput();
 
+		switch (inputNum) {
+			case 1 :
+				makeAccount();
+				break;
+			case 2 :
+				deposit();
+				break;
+			case 3 :
+				withdraw();
+				break;
+			case 4 :
+				showAllAccInfo();
+				break;
+			case 5 :
+				break;
+		}
 		if (inputNum == 5) {
 			break;
 		}
@@ -19,7 +45,7 @@ void Bank::runBankProgram() {
 
 }
 
-void Bank::showInfo() {
+void Bank::showMenu() {
 	std::cout << "----Menu----" << std::endl;
 	std::cout << "1. 계좌개설" << std::endl;
 	std::cout << "2. 입금" << std::endl;
@@ -35,4 +61,39 @@ int Bank::userInput() {
 	std::cin >> inputNum;
 
 	return inputNum;
+}
+
+void Bank::makeAccount() {
+	std::cout << "[입	금]" << std::endl;
+
+	int accountId;
+	char name[100];
+	int balance;
+
+	std::cout << "계좌ID: ";
+	std::cin >> accountId;
+
+	std::cout << "이름";
+	std::cin >> name;
+
+	std::cout << "입금액";
+	std::cin >> balance;
+
+	std::cout << "입금완료";
+
+	accArr[accIdx].addId = accountId;
+	strcpy(accArr[accIdx].customerName, name);
+	accArr[accIdx].balance = balance;
+}
+
+void Bank::deposit() {
+
+}
+
+void Bank::withdraw() {
+
+}
+
+void Bank::showAllAccInfo() {
+
 }
