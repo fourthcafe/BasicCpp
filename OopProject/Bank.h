@@ -3,8 +3,6 @@
 //
 
 namespace Bank {
-	void runBankProgram();
-
 	void showMenu();
 
 	int userInput();
