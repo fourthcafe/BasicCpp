@@ -7,30 +7,26 @@
 
 using namespace Bank;
 
+namespace Main {
+	int userInput() {
+		int inputNum;
+
+		std::cout << "Choose One: ";
+		std::cin >> inputNum;
+
+		return inputNum;
+	}
+
+}
+
 int main() {
 	while (true) {
 		showMenu();
-		int inputNum = userInput();
+		int inputNum = Main::userInput();
 
-		switch (inputNum) {
-			case 1 :
-				makeAccount();
-				break;
-			case 2 :
-				deposit();
-				break;
-			case 3 :
-				withdraw();
-				break;
-			case 4 :
-				showAllAccInfo();
-				break;
-			case 5 :
-				break;
-			default:
-				std::cout << "***Invalid input. Back to begin... ***" << std::endl << std::endl;
-				break;
-		}
+		auto bankCommand = static_cast<BANK_COMMAND>(inputNum);
+
+		run(bankCommand);
 
 		if (inputNum == 5) {
 			std::cout << "Exit program..." << std::endl;
