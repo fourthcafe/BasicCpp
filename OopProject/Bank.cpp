@@ -3,97 +3,161 @@
 //
 
 #include <iostream>
+#include <cstring>
 #include "Bank.h"
 
+using namespace std;
+using namespace Bank;
+const int NAME_LEN = 20;
+
 typedef struct {
-	int addId;
-	int balance;
-	char customerName[20];
+	int accId;                    // 계좌번호
+	int balance;                // 잔액
+	char customerName[NAME_LEN];        // 고객이름
 } Account;
 
-Account accArr[10];
-const int accIdx = 0;
+Account accountList[100];
+int accountIdx = 0;
 
-
-void Bank::runBankProgram() {
-
-	while (true) {
-		showMenu();
-		int inputNum = userInput();
-
-		switch (inputNum) {
-			case 1 :
-				makeAccount();
-				break;
-			case 2 :
-				deposit();
-				break;
-			case 3 :
-				withdraw();
-				break;
-			case 4 :
-				showAllAccInfo();
-				break;
-			case 5 :
-				break;
-		}
-		if (inputNum == 5) {
-			break;
-		}
-	}
-
-
-}
 
 void Bank::showMenu() {
-	std::cout << "----Menu----" << std::endl;
-	std::cout << "1. 계좌개설" << std::endl;
-	std::cout << "2. 입금" << std::endl;
-	std::cout << "3. 출금" << std::endl;
-	std::cout << "4. 계좌정보 전체 출력" << std::endl;
-	std::cout << "5. 프로그램 종료" << std::endl;
+	cout << "----Menu----" << endl;
+	cout << "1. Create Account" << endl;
+	cout << "2. Deposit" << endl;
+	cout << "3. Withdraw" << endl;
+	cout << "4. Print All Account Info" << endl;
+	cout << "5. Program exit" << endl;
 }
 
-int Bank::userInput() {
-	int inputNum;
-
-	std::cout << "선택: ";
-	std::cin >> inputNum;
-
-	return inputNum;
+void Bank::run(Bank::BANK_COMMAND BANK_COMMAND) {
+	switch (BANK_COMMAND) {
+		case MAKE :
+			makeAccount();
+			break;
+		case DEPOSIT :
+			deposit();
+			break;
+		case WITHDRAW :
+			withdraw();
+			break;
+		case SHOW_ALL_ACC_INFO :
+			showAllAccInfo();
+			break;
+		case EXIT :
+			initAccount();
+			break;
+		default:
+			cout << "***Invalid input. Back to begin... ***" << endl << endl;
+			break;
+	}
 }
 
 void Bank::makeAccount() {
-	std::cout << "[입	금]" << std::endl;
+	cout << "[Deposit]" << endl;
 
-	int accountId;
-	char name[100];
-	int balance;
+	cout << "Input Account ID : ";
+	int inputAccountId;
+	cin >> inputAccountId;
 
-	std::cout << "계좌ID: ";
-	std::cin >> accountId;
+	cout << "Name : ";
+	char inputName[100];
+	cin >> inputName;
 
-	std::cout << "이름";
-	std::cin >> name;
+	cout << "Deposit amount : ";
+	int inputBalance;
+	cin >> inputBalance;
 
-	std::cout << "입금액";
-	std::cin >> balance;
+	cout << "***Complete Deposit***" << endl << endl;
 
-	std::cout << "입금완료";
+	accountList[accountIdx].accId = inputAccountId;
+	strcpy(accountList[accountIdx].customerName, inputName);
+	accountList[accountIdx].balance = inputBalance;
 
-	accArr[accIdx].addId = accountId;
-	strcpy(accArr[accIdx].customerName, name);
-	accArr[accIdx].balance = balance;
+	accountIdx++;
 }
 
 void Bank::deposit() {
+	// 계좌 Id를 찾아 입금한다.
+	cout << "Input account Id : ";
+	int inputAccountId;
+	cin >> inputAccountId;
 
+	int selectAccIdx = -1;
+	for (int i = 0; i < accountIdx; i++) {
+		if (accountList[i].accId == inputAccountId) {
+			selectAccIdx = i;
+		}
+	}
+
+	if (selectAccIdx == -1) {
+		cout << "Not find account" << endl << endl;
+
+	} else {
+		cout << "Deposit amount : ";
+		int inputBalance;
+		cin >> inputBalance;
+
+
+		cout << "***Complete Deposit***" << endl << endl;
+
+		Account account = accountList[selectAccIdx];
+		account.balance += inputBalance;
+
+		accountList[selectAccIdx] = account;
+	}
 }
 
 void Bank::withdraw() {
+	cout << "***Withdraw***" << endl;
 
+	cout << "Input account Id : ";
+	int inputAccountId;
+	cin >> inputAccountId;
+
+	int selectAccIdx = -1;
+	for (int i = 0; i < accountIdx; i++) {
+		if (accountList[i].accId == inputAccountId) {
+			selectAccIdx = i;
+		}
+	}
+
+	if (selectAccIdx == -1) {
+		cout << "Not find account" << endl << endl;
+
+	} else {
+		cout << "withdraw amount : ";
+		int inputBalance;
+		cin >> inputBalance;
+
+		Account account = accountList[selectAccIdx];
+		account.balance -= inputBalance;
+
+		accountList[selectAccIdx] = account;
+
+		cout << "***Complete Withdraw***" << endl << endl;
+	}
 }
 
 void Bank::showAllAccInfo() {
+	if (accountIdx == 0) {
+		cout << "No data";
 
+	} else {
+		// sizeof(accountList)
+		// 리스트만 쓰다 오랜만에 배열을 써서 size()를 구하는 법에 대한 감이 없음
+		for (int i = 0; i < accountIdx; i++) {
+			Account account = accountList[i];
+
+			cout << "==========================" << endl;
+			cout << "account Id : " << account.accId << endl;
+			cout << "account Name : " << account.customerName << endl;
+			cout << "account balance : " << account.balance << endl;
+			cout << "==========================" << endl;
+		}
+	}
+
+}
+
+void Bank::initAccount() {
+//	fill_n(accountList, 100, -1);
 }
