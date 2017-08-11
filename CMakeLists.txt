@@ -41,7 +41,9 @@ set(CMAKE_CXX_STANDARD 11)
 #set(SOURCE_FILES Ch01/170730Exercise/Pyramid.cpp)
 #set(SOURCE_FILES Ch01/170730Exercise/Diamond.cpp Ch01/170730Exercise/PrimeNum.cpp)
 #set(SOURCE_FILES Ch01/170730Exercise/PrimeNum.cpp)
-set(SOURCE_FILES Ch01/170730Exercise/Fibonachi.cpp)
+#set(SOURCE_FILES Ch01/170730Exercise/Fibonachi.cpp)
+
+set(SOURCE_FILES Ch02/02-2/TrueAndFalse.cpp)
 
 
 #set(SOURCE_FILES OopProject/BankMain.cpp OopProject/Bank.h OopProject/Bank.cpp)
