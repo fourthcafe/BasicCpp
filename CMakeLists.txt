@@ -41,8 +41,10 @@ set(CMAKE_CXX_STANDARD 11)
 #set(SOURCE_FILES Ch01/01-5/UsingDcl1.cpp)
 #set(SOURCE_FILES Ch01/01-5/UsingDcl2.cpp)
 
+set(SOURCE_FILES Ch02/02-2/TrueAndFalse.cpp)
 
-set(SOURCE_FILES OopProject/BankMain.cpp OopProject/Bank.h OopProject/Bank.cpp)
+
+#set(SOURCE_FILES OopProject/BankMain.cpp OopProject/Bank.h OopProject/Bank.cpp)
 
 
 add_executable(Ch01 ${SOURCE_FILES})
