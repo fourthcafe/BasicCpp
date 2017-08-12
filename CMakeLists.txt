@@ -36,12 +36,12 @@ set(CMAKE_CXX_STANDARD 11)
 #set(SOURCE_FILES Ch01/01-5/UsingDcl1.cpp)
 #set(SOURCE_FILES Ch01/01-5/UsingDcl2.cpp)
 
-#set(SOURCE_FILES Ch01/170730Exercise/Triangle.cpp)
-#set(SOURCE_FILES Ch01/170730Exercise/HalfPyramid.cpp)
-#set(SOURCE_FILES Ch01/170730Exercise/Pyramid.cpp)
-#set(SOURCE_FILES Ch01/170730Exercise/Diamond.cpp Ch01/170730Exercise/PrimeNum.cpp)
-#set(SOURCE_FILES Ch01/170730Exercise/PrimeNum.cpp)
-#set(SOURCE_FILES Ch01/170730Exercise/Fibonachi.cpp)
+#set(SOURCE_FILES Ch01/Exercise/Triangle.cpp)
+#set(SOURCE_FILES Ch01/Exercise/HalfPyramid.cpp)
+#set(SOURCE_FILES Ch01/Exercise/Pyramid.cpp)
+#set(SOURCE_FILES Ch01/Exercise/Diamond.cpp Ch01/Exercise/PrimeNum.cpp)
+#set(SOURCE_FILES Ch01/Exercise/PrimeNum.cpp)
+#set(SOURCE_FILES Ch01/Exercise/Fibonachi.cpp)
 
 set(SOURCE_FILES Ch02/02-2/TrueAndFalse.cpp)
 
