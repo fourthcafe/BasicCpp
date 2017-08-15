@@ -12,10 +12,8 @@ set(CMAKE_CXX_STANDARD 11)
 #set(SOURCE_FILES Ch01/01-1/Question01-1-3.cpp)
 #set(SOURCE_FILES Ch01/01-1/Question01-1-4.cpp)
 
-
 #set(SOURCE_FILES Ch01/01-2/FunctionOverloading.cpp)
 #set(SOURCE_FILES Ch01/01-2/Question01-2.cpp)
-
 
 #set(SOURCE_FILES Ch01/01-3/DefaultValue1.cpp)
 #set(SOURCE_FILES Ch01/01-3/DefaultValue2.cpp)
@@ -23,10 +21,8 @@ set(CMAKE_CXX_STANDARD 11)
 #set(SOURCE_FILES Ch01/01-3/Question01-3-1.cpp)
 #set(SOURCE_FILES Ch01/01-3/Question01-3-2.cpp)
 
-
 #set(SOURCE_FILES Ch01/01-4/InlineFunc.cpp)
 #set(SOURCE_FILES Ch01/01-4/Template.cpp)
-
 
 #set(SOURCE_FILES Ch01/01-5/NameSp1.cpp)
 #set(SOURCE_FILES Ch01/01-5/NameSp2.cpp)
@@ -36,18 +32,22 @@ set(CMAKE_CXX_STANDARD 11)
 #set(SOURCE_FILES Ch01/01-5/UsingDcl1.cpp)
 #set(SOURCE_FILES Ch01/01-5/UsingDcl2.cpp)
 
-#set(SOURCE_FILES Ch01/Exercise/Triangle.cpp)
-#set(SOURCE_FILES Ch01/Exercise/HalfPyramid.cpp)
-#set(SOURCE_FILES Ch01/Exercise/Pyramid.cpp)
-#set(SOURCE_FILES Ch01/Exercise/Diamond.cpp Ch01/Exercise/PrimeNum.cpp)
-#set(SOURCE_FILES Ch01/Exercise/PrimeNum.cpp)
-#set(SOURCE_FILES Ch01/Exercise/Fibonachi.cpp)
+
+set(SOURCE_FILES Ch02/02-1/ConstKeyword.cpp)
 
 #set(SOURCE_FILES Ch02/02-2/TrueAndFalse.cpp)
 #set(SOURCE_FILES Ch02/02-2/DataTypeBool.cpp)
 #set(SOURCE_FILES Ch02/02-3/Referen.cpp)
 #set(SOURCE_FILES Ch02/02-3/RefArrElem.cpp)
-set(SOURCE_FILES Ch02/02-3/RefPtr.cpp)
+#set(SOURCE_FILES Ch02/02-3/RefPtr.cpp)
+
+
+#set(SOURCE_FILES Exercise/Triangle.cpp)
+#set(SOURCE_FILES Exercise/HalfPyramid.cpp)
+#set(SOURCE_FILES Exercise/Pyramid.cpp)
+#set(SOURCE_FILES Exercise/Diamond.cpp)
+#set(SOURCE_FILES Exercise/PrimeNum.cpp)
+#set(SOURCE_FILES Exercise/Fibonachi.cpp)
 
 
 #set(SOURCE_FILES OopProject/BankMain.cpp OopProject/Bank.h OopProject/Bank.cpp)

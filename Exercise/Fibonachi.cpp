@@ -9,8 +9,8 @@ int main() {
 	int inputNum;
 	std::cin >> inputNum;
 
-	int firstNum = 0;
-	int secondNum = 0;
+	int firstNum = 1;
+	int secondNum = 1;
 
 	std::cout << firstNum << " " << secondNum << " ";
 
