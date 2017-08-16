@@ -33,13 +33,16 @@ set(CMAKE_CXX_STANDARD 11)
 #set(SOURCE_FILES Ch01/01-5/UsingDcl2.cpp)
 
 
-set(SOURCE_FILES Ch02/02-1/ConstKeyword.cpp)
+#set(SOURCE_FILES Ch02/02-1/ConstKeyword.cpp)
 
 #set(SOURCE_FILES Ch02/02-2/TrueAndFalse.cpp)
 #set(SOURCE_FILES Ch02/02-2/DataTypeBool.cpp)
+
 #set(SOURCE_FILES Ch02/02-3/Referen.cpp)
 #set(SOURCE_FILES Ch02/02-3/RefArrElem.cpp)
 #set(SOURCE_FILES Ch02/02-3/RefPtr.cpp)
+
+set(SOURCE_FILES Ch02/02-4/RefSwap.cpp)
 
 
 #set(SOURCE_FILES Exercise/Triangle.cpp)
