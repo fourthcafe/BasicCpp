@@ -43,9 +43,13 @@ set(CMAKE_CXX_STANDARD 11)
 #set(SOURCE_FILES Ch02/02-3/RefPtr.cpp)
 
 #set(SOURCE_FILES Ch02/02-4/RefSwap.cpp)
-set(SOURCE_FILES Ch02/02-4/Call-By-Reference.cpp)
-#set(SOURCE_FILES Ch02/02-4/Question02-1.cpp)
-#set(SOURCE_FILES Ch02/02-4/Question02-3.cpp)
+#set(SOURCE_FILES Ch02/02-4/Call-By-Reference.cpp)
+#set(SOURCE_FILES Ch02/02-4/Question02-1-1.cpp)
+#set(SOURCE_FILES Ch02/02-4/Question02-1-3.cpp)
+#set(SOURCE_FILES Ch02/02-4/RefReturnOne.cpp)
+#set(SOURCE_FILES Ch02/02-4/RefReturnTwo.cpp)
+#set(SOURCE_FILES Ch02/02-4/RefReturnThree.cpp)
+set(SOURCE_FILES Ch02/02-4/Question02-2.cpp)
 
 
 #set(SOURCE_FILES Exercise/Triangle.cpp)
