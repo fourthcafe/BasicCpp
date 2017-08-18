@@ -49,7 +49,7 @@ set(CMAKE_CXX_STANDARD 11)
 #set(SOURCE_FILES Ch02/02-4/RefReturnOne.cpp)
 #set(SOURCE_FILES Ch02/02-4/RefReturnTwo.cpp)
 #set(SOURCE_FILES Ch02/02-4/RefReturnThree.cpp)
-set(SOURCE_FILES Ch02/02-4/Question02-2.cpp)
+#set(SOURCE_FILES Ch02/02-4/Question02-2.cpp)
 
 
 #set(SOURCE_FILES Exercise/Triangle.cpp)
@@ -58,6 +58,7 @@ set(SOURCE_FILES Ch02/02-4/Question02-2.cpp)
 #set(SOURCE_FILES Exercise/Diamond.cpp)
 #set(SOURCE_FILES Exercise/PrimeNum.cpp)
 #set(SOURCE_FILES Exercise/Fibonachi.cpp)
+set(SOURCE_FILES Exercise/CalcDigit.cpp)
 
 
 #set(SOURCE_FILES OopProject/BankMain.cpp OopProject/Bank.h OopProject/Bank.cpp)
