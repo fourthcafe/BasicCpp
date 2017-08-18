@@ -12,7 +12,7 @@ void devide(int dividend) {
 	do {
 		dividend /= 10;
 		count++;
-	} while (dividend > 0);
+	} while (abs(dividend) > 0);
 
 	std::cout << "자릿수: " << count << std::endl;
 }
