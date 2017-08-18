@@ -18,5 +18,12 @@ void devide(int dividend) {
 }
 
 int main() {
-	devide(39228);
+	int dividend;
+
+	do {
+		std::cout << "숫자를 입력해주세요(종료=0) : ";
+		std::cin >> dividend;
+
+		devide(dividend);
+	} while (dividend != 0);
 }
