@@ -129,3 +129,23 @@
     * C++ 에서 함수 외부에 선언된 변수의 접근 방법으로 두 가지가 존재
         * 주소 값을 이용한 Call-by-reference
         * 참조자를 이용한 Call-by-reference
+
+
+    * 포인터(pointer)와 참조자(reference)의 차이점
+
+        [REF. Developer WhiteSnake's Blog](http://whitesnake.uzoo.in/29)
+
+        * 참조자는 한번 가리킨 대상을 변경할 수 없지만, 포인터는 자신이 가리키는 대상을 언제든지 변경할 수 있다.
+            ```
+            string nickname("fourthcafe");
+            string address("seoul");
+            string &ref = nickname;    // 초기화
+            ref = address;          // 위 코드는 참조 대상을 nickname에서 address로 변경하는 게 아니라
+                                    // nickname객체의 값을 address의 값으로 변경하게 된다.
+            ```
+
+        * 포인터
+            ```
+            string *pointer = &nickname;    // 초기화
+            pointer = &address;            // pointer는 이제 address을 가리킨다.
+            ```
