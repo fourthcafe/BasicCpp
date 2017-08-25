@@ -55,7 +55,8 @@ set(CMAKE_CXX_STANDARD 11)
 #set(SOURCE_FILES Ch02/02-5/NewDelete.cpp)
 #set(SOURCE_FILES Ch02/02-5/NewObject.cpp)
 #set(SOURCE_FILES Ch02/02-5/Question02-3.cpp)
-set(SOURCE_FILES Ch02/02-5/DefferentPtrAndRef.cpp)
+#set(SOURCE_FILES Ch02/02-5/DefferentPtrAndRef.cpp)
+set(SOURCE_FILES Ch02/02-5/PointerNConst.cpp)
 
 
 
