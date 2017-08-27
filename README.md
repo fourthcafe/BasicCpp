@@ -149,3 +149,30 @@
             string *pointer = &nickname;    // 초기화
             pointer = &address;            // pointer는 이제 address을 가리킨다.
             ```
+
+    * 포인터를 선언할 때 const를 사용하는 방법
+
+        [REF. Developer WhiteSnake's Blog](http://whitesnake.uzoo.in/31)
+
+        ```
+        포인터가 가리키고 있는 값 고정
+        const std::string *constStringPointer = &nickName;
+        std::string const *stringConstPointer = &nickName;
+        const std::string const *constStringConstPointer = &nickName;
+
+
+        포인터가 가리키고 있는 주소값 고정 (참조자와 유사)
+        std::string *const stringPointerConst = &nickName;
+
+
+        포인터가 가리키고 있는 주소와 값 모두 고정
+        const std::string *const constStringPointerConst = &nickName;
+        ```
+
+        * 결론
+
+            __*const__ 구문이 있으면 포인터의 주소값이 고정된다. 그 외에는 값이 고정된다. const 구문의 위치는 중요하지 않다. 아래 두 선언은 string 변수를 고정값으로 한다는 의미에서 동일하다.
+            ```
+            const string constString = "고정값1";
+            string const stringConst = "고정값2";
+            ```

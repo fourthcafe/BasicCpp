@@ -24,5 +24,5 @@ int main() {
 	// free(str);
 	delete[]str;
 
-	return 9;
+	return 0;
 }
