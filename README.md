@@ -44,12 +44,12 @@
 
 * 참조자의 수에는 제한이 없으며, 참조자를 대상으로도 참조자를 선언할 수 있다.
 
-    ```
+    ```cpp
     int num1 = 8080;
     int &num2 = num1;
     int &num3 = num1;
     ```
-    ```
+    ```cpp
     int num1 = 8080;
     int &num2 = num1;
     int &num3 = num2;
@@ -72,7 +72,7 @@
 
 * Call-by-value :: 값을 인자로 전달하는 함수의 호출방식
     * 함수의 내부에서 함수 외붕 선언된 변수에 접근이 불가능함.
-    ```
+    ```cpp
     // 두 변수에 저장된 값을 서로 바꿔서 저장할 목적을 달성할 수 없음
     int Adder(int num1, int num2) {
         int temp = num1;
@@ -82,7 +82,7 @@
     ```
 
 * Call-by-reference :: 주소 값을 인자로 전달하는 함수의 호출방식
-    ```
+    ```cpp
     // ptr1과 ptr2의 값이 서로 바뀜
     void SwapByRef(int * ptr1, int * ptr2) {
         int temp = *ptr1;
@@ -101,11 +101,11 @@
 
     * 다음 함수는 Call-by-value, reference 두가지 형태로 전부 쓰일 수 있는 function-signature 이다.
 
-        ```
+        ```cpp
         int * SimpleFunc(int *ptr)
         ```
 
-        ```
+        ```cpp
         // Call-by-value
         // 연산 주체가 값(value), 다만 그 값이 주소 값 일뿐.
         int * SimpleFunc(int *ptr) {
@@ -113,7 +113,7 @@
         }
         ```
 
-        ```
+        ```cpp
         // Call-by-reference
         // 주소 값을 이용해서 함수 외부에 선언된 변수를 참조(reference)
         int * SimpleFunc(int *ptr) {
@@ -136,7 +136,7 @@
         [REF. Developer WhiteSnake's Blog](http://whitesnake.uzoo.in/29)
 
         * 참조자는 한번 가리킨 대상을 변경할 수 없지만, 포인터는 자신이 가리키는 대상을 언제든지 변경할 수 있다.
-            ```
+            ```cpp
             string nickname("fourthcafe");
             string address("seoul");
             string &ref = nickname;    // 초기화
@@ -145,7 +145,7 @@
             ```
 
         * 포인터
-            ```
+            ```cpp
             string *pointer = &nickname;    // 초기화
             pointer = &address;            // pointer는 이제 address을 가리킨다.
             ```
@@ -154,7 +154,7 @@
 
         [REF. Developer WhiteSnake's Blog](http://whitesnake.uzoo.in/31)
 
-        ```
+        ```cpp
         포인터가 가리키고 있는 값 고정
         const std::string *constStringPointer = &nickName;
         std::string const *stringConstPointer = &nickName;
@@ -172,7 +172,7 @@
         * 결론
 
             __*const__ 구문이 있으면 포인터의 주소값이 고정된다. 그 외에는 값이 고정된다. const 구문의 위치는 중요하지 않다. 아래 두 선언은 string 변수를 고정값으로 한다는 의미에서 동일하다.
-            ```
+            ```cpp
             const string constString = "고정값1";
             string const stringConst = "고정값2";
             ```
