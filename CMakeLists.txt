@@ -58,7 +58,7 @@ set(CMAKE_CXX_STANDARD 11)
 #set(SOURCE_FILES Ch02/02-5/DefferentPtrAndRef.cpp)
 #set(SOURCE_FILES Ch02/02-5/PointerNConst.cpp)
 
-set(SOURCE_FILES Ch02/02-6/StdCPPFunc.cpp)
+#set(SOURCE_FILES Ch02/02-6/StdCPPFunc.cpp)
 
 
 
@@ -69,6 +69,8 @@ set(SOURCE_FILES Ch02/02-6/StdCPPFunc.cpp)
 #set(SOURCE_FILES Exercise/PrimeNum.cpp)
 #set(SOURCE_FILES Exercise/Fibonachi.cpp)
 #set(SOURCE_FILES Exercise/CalcDigit.cpp)
+#set(SOURCE_FILES Exercise/minMax.cpp)
+set(SOURCE_FILES Exercise/binarySearch.cpp)
 
 
 #set(SOURCE_FILES OopProject/BankMain.cpp OopProject/Bank.h OopProject/Bank.cpp)
